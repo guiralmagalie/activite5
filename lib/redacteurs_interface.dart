@@ -179,6 +179,7 @@ class _RedacteursInterfaceState extends State<RedacteursInterface> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Gestion des rédacteurs'),
+        backgroundColor: Colors.pink,
         actions: [
           IconButton(
             icon: const Icon(Icons.search),
@@ -227,6 +228,9 @@ class _RedacteursInterfaceState extends State<RedacteursInterface> {
                       onPressed: _ajouterRedacteur,
                       icon: const Icon(Icons.add),
                       label: const Text('Ajouter un Rédacteur'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.pink
+                      ),
                     ),
                   ],
                 ),
